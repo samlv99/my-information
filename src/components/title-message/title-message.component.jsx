@@ -13,16 +13,20 @@ const MyTitleMessage = styled.h1`
     font-size: 1.25em;
   }
   div {
-    color: ${(props) => props.theme.textColor};
+    font-family: Arial, Helvetica, sans-serif;
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
-    font-weight: 100;
-    letter-spacing: 7px;
+    font-weight: 400;
+    letter-spacing: 5px;
     .main {
       font-size: 50px;
+    }
+    .text-center {
+      color: white;
     }
     .sub {
       font-size: 27px;
       letter-spacing: 2px;
+      color: #f05123;
     }
   }
 `;
@@ -32,7 +36,7 @@ const TitleMessage = () => {
     <MyTitleMessage>
       <div className="titleMessage">
         <div className="heading">
-          <div className="main text-center mb-3">
+          <div className="text-center">
             Hi, I am
             <br />
             <span>
